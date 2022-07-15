@@ -3,7 +3,9 @@ const app = express();
 const path = require('path');
 const cors = require('cors');
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000, function(){
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+});
 
 app.use(express.static('public'));
 app.use(express.json());
