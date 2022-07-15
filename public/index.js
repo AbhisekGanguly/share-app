@@ -15,7 +15,7 @@ const emailForm = document.querySelector("#emailForm");
 
 const toast = document.querySelector(".toast");
 
-const baseURL = "https://innshare.herokuapp.com";
+const baseURL = "https://share-app-proj.herokuapp.com";
 const uploadURL = `${baseURL}/api/files`;
 const emailURL = `${baseURL}/api/files/send`;
 
@@ -80,9 +80,9 @@ fileURL.addEventListener("click", () => {
 const uploadFile = () => {
   console.log("file added uploading");
 
-  files = fileInput.files;
+  const files = fileInput.files[0];
   const formData = new FormData();
-  formData.append("myfile", files[0]);
+  formData.append("myfile", files);
 
   //show the uploader
   progressContainer.style.display = "block";
