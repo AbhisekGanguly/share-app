@@ -22,10 +22,7 @@ app.use(cors(corsOptions));
 
 
 //connect to the frontend
-app.use(express.static(path.join('public')));
-app.use((req,res) => {
-   res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
-});
+//currently feature suspended!
 
 // Template Engine
 app.set('views', path.join(__dirname, '/views'));
