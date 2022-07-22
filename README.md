@@ -6,4 +6,4 @@ NoSQL cloud database(mongoDB) has been used in the project to allow easy accessi
 
 SMTP mail servers have been set up to allow user to send emails to anywhere without any restrictions, can send email as different person as well, maintaining annonimity.
 
-# Find the Project here; https://share-app-proj.herokuapp.com/
+### Find the Project here: https://share-app-proj.herokuapp.com/
